@@ -6,16 +6,18 @@
     RewriteEngine on
 
     RewriteRule ^guarda-usuario$ forms/Form-usuarios.php?action=nuevo_usuario [L]
+    RewriteRule ^inicia-sesion$ forms/Form-usuarios.php?action=inicia_sesion [L]
+    RewriteRule ^actualiza-usuario$ forms/Form-usuarios.php?action=actualiza_usuario [L]
+    RewriteRule ^nueva-tarea$ forms/Form-tareas.php?action=nueva_tarea [L]
+    RewriteRule ^elimina-tarea-([0-9]+)$ forms/Form-tareas.php?action=elimina_tarea&id=$1 [L]
+    RewriteRule ^edita-tarea$ forms/Form-tareas.php?action=edita_tarea [L]
+    
 
     RewriteRule ^mi-cuenta$ cuenta.php [L]
 
-
-    RewriteRule ^factura-([0-9]+)$ export/factura-cliente.php?id_factura=$1 [L]	
-    RewriteRule ^albaran-compra-([0-9]+)$ export/Export-pedido-compra.php?id_pedido=$1 [L]	
-
-    
-
-    #FORMS
-    RewriteRule ^cambiacolumnasproductos$ forms/Form-perfil.php?action=cambia_columnas_productos [L]
+    RewriteRule ^mis-datos$ cuenta.php?action=cuenta [L]
+    RewriteRule ^mis-tareas$ cuenta.php?action=tareas [L]
+    RewriteRule ^mis-datos-([0-9]+)$ cuenta.php?action=cuenta&error=$1 [L]
+    RewriteRule ^edita-tarea-([0-9]+)$ cuenta.php?action=edita_tarea&id_tarea=$1 [L]
 
 </IfModule>

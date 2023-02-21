@@ -53,8 +53,6 @@ h1 {
 }
 
 label {
-  position: absolute;
-  transform: translateY(6px);
   left: 13px;
   color: #525252;
   transition: all 0.25s ease;
@@ -68,7 +66,7 @@ label .req {
 }
 
 label.active {
-  transform: translateY(50px);
+ 
   left: 2px;
   font-size: 14px;
 }
