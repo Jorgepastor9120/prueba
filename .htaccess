@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_env.c>
+    SetEnv HTTP_MOD_REWRITE On
+    </IfModule>
+
+    RewriteEngine on
+
+    RewriteRule ^guarda-usuario$ forms/Form-usuarios.php?action=nuevo_usuario [L]
+
+    RewriteRule ^mi-cuenta$ cuenta.php [L]
+
+
+    RewriteRule ^factura-([0-9]+)$ export/factura-cliente.php?id_factura=$1 [L]	
+    RewriteRule ^albaran-compra-([0-9]+)$ export/Export-pedido-compra.php?id_pedido=$1 [L]	
+
+    
+
+    #FORMS
+    RewriteRule ^cambiacolumnasproductos$ forms/Form-perfil.php?action=cambia_columnas_productos [L]
+
+</IfModule>
