@@ -7,8 +7,8 @@ Aplicación se ha realizado con PHP 8 y MySQL (10.4.27-MariaDB). Como framework 
 ESTRUCTURA DE LA APLICACIÓN: 
 
 Vistas principales: Dos vistas, para el formulario de registro y la gestión de la cuenta.
-  -index.php: Página principal con formulario de registro y de inicio de sesión.
-  -cuenta.php: Pagina con las vistas para actualizar la información de usuario y para la gestión de tareas.
+-index.php: Página principal con formulario de registro y de inicio de sesión.
+-cuenta.php: Pagina con las vistas para actualizar la información de usuario y para la gestión de tareas.
   
 Config: carpeta para las configuraciones de la aplicación. Al ser una aplicación pequeña solo consta de un archivo.
   -conexion.php: Conexión con la base de datos y consultas a la misma.
