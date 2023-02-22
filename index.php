@@ -33,33 +33,37 @@
                                 <h1>Registrate</h1>
                                 
                                 <form action="guarda-usuario" method="post">
-                                
-                                    <div class="field-wrap">
+                                    <?php
+                                    if ( isset( $_GET['error'] ) ) {
+                                        echo"<div class='alert alert-danger' role='alert'>{$_GET['error']}</div>";
+                                    }
+                                    ?>
+                                    <div class="form-group">
                                         <label>Nombre<span class="req">*</span></label>
                                         <input name='name' type="text" required autocomplete="off" />
                                     </div>
 
-                                    <div class="field-wrap">
+                                    <div class="form-group">
                                         <label>Email <span class="req">*</span></label>
                                         <input name='mail' type="email"required autocomplete="off"/>
                                     </div>
 
-                                    <div class="field-wrap">
+                                    <div class="form-group">
                                         <label>Dirección<span class="req">*</span></label>
                                         <input name='address' type="text" required autocomplete="off" />
                                     </div>
                                     
-                                    <div class="field-wrap">
+                                    <div class="form-group">
                                         <label>Código postal<span class="req">*</span></label>
                                         <input name='cp_address' type="number" required autocomplete="off" />
                                     </div>
 
-                                    <div class="field-wrap">
+                                    <div class="form-group">
                                         <label>Descripción<span class="req">*</span></label>
                                         <textarea name='description' required autocomplete="off"></textarea>
                                     </div>
 
-                                    <div class="field-wrap">
+                                    <div class="form-group">
                                         <label>Contraseña<span class="req">*</span></label>
                                         <input  name='password' type="password"required autocomplete="off"/>
                                     </div>
@@ -79,12 +83,12 @@
                                         echo"<div class='alert alert-danger' role='alert'>{$_GET['error']}</div>";
                                     }
                                     ?>
-                                    <div class="field-wrap">
+                                    <div class="form-group">
                                         <label>Email<span class="req">*</span></label>
-                                        <input name='mail' type="email"required autocomplete="off"/>
+                                        <input name='mail' type="email"required/>
                                     </div>
                                 
-                                    <div class="field-wrap">
+                                    <div class="form-group">
                                         <label>Password<span class="req">*</span></label>
                                         <input name='password' type="password"required autocomplete="off"/>
                                     </div>

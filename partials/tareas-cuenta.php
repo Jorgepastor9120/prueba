@@ -32,9 +32,9 @@
                             <button class='btn btn-success btn-xs dropdown-toggle' type='button' data-toggle='dropdown'>Acciones
                             <span class='caret'></span></button>
                             <ul class='dropdown-menu'>
-                                <li><a class='p-1' href='edita-tarea-{$ROW_user_tasks['id']}'>Editar</a></li>
+                                <li><a class='p-1' href='edita-tarea-{$ROW_user_tasks['id']}'><i class='fa-sharp fa-solid fa-pencil'></i> Editar</a></li>
                                 <li class='divider'></li>
-                                <li><a class='p-1' href='elimina-tarea-{$ROW_user_tasks['id']}'>Borrar</a></li>
+                                <li><a class='p-1' href='elimina-tarea-{$ROW_user_tasks['id']}'><i class='fa-sharp fa-solid fa-trash'></i> Borrar</a></li>
                             </ul>
                         </div>
                         </td>

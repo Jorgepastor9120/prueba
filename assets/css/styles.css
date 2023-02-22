@@ -103,11 +103,6 @@ textarea {
   resize: vertical;
 }
 
-.field-wrap {
-  position: relative;
-  margin-bottom: 40px;
-}
-
 .top-row:after {
   content: "";
   display: table;
