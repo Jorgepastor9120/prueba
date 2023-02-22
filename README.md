@@ -50,6 +50,9 @@ ingeteam.sql: Archivo para crear la base de datos y sus tablas.
 # CONTROL DE ERRORES Y VALIDACIÓN DE DATOS:
 
 -Al iniciar la aplicaión comprueba la conexión a la base de datos.
+
 -Al crear un usuario la aplicación comprueba que el mail no está ya registrado, sino devuelve un error.
+
 -Al crear un usuario la aplicación comprueba que los datos introducidos son válidos.
+
 -Al iniciar sesión comprueba que mail y contraseña existen y corresponden a un usuario.
