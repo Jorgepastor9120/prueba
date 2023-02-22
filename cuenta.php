@@ -23,14 +23,18 @@
             <div class="container my-5">
                 <div class="row justify-content-center">
                     <?php
-                    if ( !isset( $_GET['action'] ) || $_GET['action'] == 'cuenta' ) {
-                        include 'partials/datos-cuenta.php';
-                    }
-                    if ( isset( $_GET['action'] ) and $_GET['action'] == 'tareas' ) {
-                        include 'partials/tareas-cuenta.php';
-                    }
-                    if ( isset( $_GET['action'] ) and $_GET['action'] == 'edita_tarea' ) {
-                        include 'partials/tareas-edicion.php';
+                    if ( $_SESSION['loggedin'] == true ) {
+                        if ( !isset( $_GET['action'] ) || $_GET['action'] == 'cuenta' ) {
+                            include 'partials/datos-cuenta.php';
+                        }
+                        if ( isset( $_GET['action'] ) and $_GET['action'] == 'tareas' ) {
+                            include 'partials/tareas-cuenta.php';
+                        }
+                        if ( isset( $_GET['action'] ) and $_GET['action'] == 'edita_tarea' ) {
+                            include 'partials/tareas-edicion.php';
+                        }
+                    } else {
+                        echo"<p>Debes iniciar sesión.</p>";
                     }
                     ?>
                 </div>
