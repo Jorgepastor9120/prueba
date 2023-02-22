@@ -17,14 +17,14 @@ Config: carpeta para las configuraciones de la aplicación. Al ser una aplicaci�
 -conexion.php: Conexión con la base de datos y consultas a la misma.
   
 Partials: carpeta con las vistas de las sub-paginas.
-  -nav.php: Menú de navegación. Si el usuario ha iniciado sesión se mostrarán los enlaces hacia la cuenta y para cerrar sesión.
-  -datos-cuenta.php: Formulario para actualizar datos del usuario.
-  -tareas-cuenta.php: Listado de de tareas, desde aqui se pueden eliminar y actualizar.
-  -tareas-edicion.php: Formulario para actualizar una tarea.
+-nav.php: Menú de navegación. Si el usuario ha iniciado sesión se mostrarán los enlaces hacia la cuenta y para cerrar sesión.
+-datos-cuenta.php: Formulario para actualizar datos del usuario.
+-tareas-cuenta.php: Listado de de tareas, desde aqui se pueden eliminar y actualizar.
+-tareas-edicion.php: Formulario para actualizar una tarea.
   
 Forms: Carpeta con los archivos de modificación de la base de datos.
-  -Form-usuarios.php: Para crear usuarios y actualizar su información.
-  -Form-tareas.php: Para la gestión de tareas (crear, actualizar y eliminar).
+-Form-usuarios.php: Para crear usuarios y actualizar su información.
+-Form-tareas.php: Para la gestión de tareas (crear, actualizar y eliminar).
   
 Assets: Para los archivos estáticos css y js.
   
@@ -36,8 +36,8 @@ ingeteam.sql: Archivo para crear la base de datos y sus tablas.
  
  
 CONTROL DE ERRORES Y VALIDACIÓN DE DATOS:
- 
- -Al iniciar la aplicaión comprueba la conexión a la base de datos.
- -Al crear un usuario la aplicación comprueba que el mail no está ya registrado, sino devuelve un error.
- -Al crear un usuario la aplicación comprueba que los datos introducidos son válidos.
- -Al iniciar sesión comprueba que mail y contraseña existen y corresponden a un usuario.
+
+-Al iniciar la aplicaión comprueba la conexión a la base de datos.
+-Al crear un usuario la aplicación comprueba que el mail no está ya registrado, sino devuelve un error.
+-Al crear un usuario la aplicación comprueba que los datos introducidos son válidos.
+-Al iniciar sesión comprueba que mail y contraseña existen y corresponden a un usuario.
