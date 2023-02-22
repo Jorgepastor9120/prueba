@@ -12,9 +12,11 @@ Vistas principales: Dos vistas, para el formulario de registro y la gestión de 
 
 -cuenta.php: Pagina con las vistas para actualizar la información de usuario y para la gestión de tareas.
   
+  
 Config: carpeta para las configuraciones de la aplicación. Al ser una aplicación pequeña solo consta de un archivo.
 
 -conexion.php: Conexión con la base de datos y consultas a la misma.
+  
   
 Partials: carpeta con las vistas de las sub-paginas.
 
@@ -27,13 +29,15 @@ Partials: carpeta con las vistas de las sub-paginas.
 -tareas-edicion.php: Formulario para actualizar una tarea.
 
   
+  
 Forms: Carpeta con los archivos de modificación de la base de datos.
 
 -Form-usuarios.php: Para crear usuarios y actualizar su información.
 
 -Form-tareas.php: Para la gestión de tareas (crear, actualizar y eliminar).
 
-  
+
+
 Assets: Para los archivos estáticos css y js.
   
 *Nota: Las acciones dentro de los archivos Form-* se separan mediante una variable tipo GET ($_GET['action'].
