@@ -1,10 +1,10 @@
 # prueba
 
-LENGUAJES Y FRAMEWORKS USADOS:
+# LENGUAJES Y FRAMEWORKS USADOS:
 
 Aplicación se ha realizado con PHP 8 y MySQL (10.4.27-MariaDB). Como framework para el Front he utilizado Bootstrap y FontAwesome para los iconos vectoriales.
 
-ESTRUCTURA DE LA APLICACIÓN: 
+# ESTRUCTURA DE LA APLICACIÓN: 
 
 Vistas principales: Dos vistas, para el formulario de registro y la gestión de la cuenta.
 
@@ -47,7 +47,7 @@ Assets: Para los archivos estáticos css y js.
 ingeteam.sql: Archivo para crear la base de datos y sus tablas.
  
  
-CONTROL DE ERRORES Y VALIDACIÓN DE DATOS:
+# CONTROL DE ERRORES Y VALIDACIÓN DE DATOS:
 
 -Al iniciar la aplicaión comprueba la conexión a la base de datos.
 -Al crear un usuario la aplicación comprueba que el mail no está ya registrado, sino devuelve un error.
