@@ -17,6 +17,7 @@ Config: carpeta para las configuraciones de la aplicación. Al ser una aplicaci�
 -conexion.php: Conexión con la base de datos y consultas a la misma.
   
 Partials: carpeta con las vistas de las sub-paginas.
+
 -nav.php: Menú de navegación. Si el usuario ha iniciado sesión se mostrarán los enlaces hacia la cuenta y para cerrar sesión.
 -datos-cuenta.php: Formulario para actualizar datos del usuario.
 -tareas-cuenta.php: Listado de de tareas, desde aqui se pueden eliminar y actualizar.
